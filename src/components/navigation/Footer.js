@@ -60,21 +60,21 @@ const Footer = () => {
             <a
               href="https://twitter.com/spotify"
               target="_blank"
-              className="social twitter hover:bg-gray-600 w-[50px] h-[50px] flex items-center justify-center"
+              className="social twitter hover:bg-gray-800 w-[50px] h-[50px] flex items-center justify-center"
             >
               <FontAwesomeIcon icon={faTwitter} className=" text-white" />
             </a>
             <a
               href="https://www.facebook.com/Spotify"
               target="_blank"
-              className="social facebook hover:bg-gray-600 w-[50px] h-[50px] flex items-center justify-center"
+              className="social facebook hover:bg-gray-800 w-[50px] h-[50px] flex items-center justify-center"
             >
               <FontAwesomeIcon icon={faFacebook} className=" text-white" />
             </a>
             <a
               href="https://www.instagram.com/spotify/"
               target="_blank"
-              className="social instagram hover:bg-gray-600 w-[50px] h-[50px] flex items-center justify-center"
+              className="social instagram hover:bg-gray-800 w-[50px] h-[50px] flex items-center justify-center"
             >
               <FontAwesomeIcon icon={faInstagram} className=" text-white" />
             </a>
