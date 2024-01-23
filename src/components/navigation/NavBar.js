@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
@@ -11,31 +10,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
-  const dispatch = useDispatch();
-  const currentPage = useSelector((state) => state.navigation.currentPage);
-
-  const goToNextPage = () => {
-    dispatch({ type: 'GO_TO_NEXT', payload: 'nextPage' });
-  };
-
-  const goToPreviousPage = () => {
-    dispatch({ type: 'GO_TO_PREVIOUS', payload: 'previousPage' });
-  };
-
   return (
-    <div className="flex rounded p-6 backdrop-blur h-[64px] justify-between font-medium">
+    <nav className="flex rounded p-6 backdrop-blur h-[64px] justify-between font-medium mb-3 sticky top-0 z-10">
       <div className="flex items-center">
-        <button
-          onClick={goToPreviousPage}
-          className=" bg-black w-[32px] h-[32px] rounded-full flex items-center justify-center mr-2"
-        >
+        <button className=" bg-black w-[32px] h-[32px] rounded-full flex items-center justify-center mr-2">
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
-        <span>{currentPage}</span>
-        <button
-          onClick={goToNextPage}
-          className=" bg-black w-[32px] h-[32px] rounded-full flex items-center justify-center"
-        >
+
+        <button className=" bg-black w-[32px] h-[32px] rounded-full flex items-center justify-center">
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
       </div>
@@ -58,7 +40,7 @@ const NavBar = () => {
           </button>
         </Link>
       </div>
-    </div>
+    </nav>
   );
 };
 

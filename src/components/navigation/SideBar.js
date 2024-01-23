@@ -12,7 +12,7 @@ import likedSongs from "../../utils/likedSongs.png";
 
 const SideBar = () => {
   return (
-    <nav className="SideBar  w-[280px] xs:w-[72px] h-[617px] flex flex-col align-middle  pb-2 pr-3">
+    <nav className="SideBar  w-[280px] xs:w-[72px] h-[617px] flex flex-col align-middle  pb-2 pr-3 sticky top-0 z-10">
       <div className="backdrop-blur rounded-xl">
         <Link
           to="/home"

@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="rounded p-6 backdrop-blur">
+    <div className="rounded p-6 backdrop-blur mt-3">
       <div className="flex justify-between flex-wrap border-b-[1px] border-gray-400">
         <div className="1">
           <ul className="mb-5">
